@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <title>graph</title>
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- jQuery UI CSS -->
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div id = "unique"><p class="navbar-brand">COVID-19 환자수 타임라인 (2020/01/20 ~ 2020/04/30)</p></div>
+  
+  
+</nav>
+
+        <!-- Bootstrap grid setup -->
+        <div class="container">
+            <div id="selections" class="row">
+                <div class="col-md-4">
+                    <div id="slider-div">
+                        <label>Date: <span id="dateLabel1">20/01/2020</span> - <span id="dateLabel2">30/04/2020</span></label>
+                        <div id="date-slider"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <select id="province-select" class="form-control">
+                        <option selected value="Total">Total</option>
+                        <option value="Total">Total</option>
+                        <option value=0>Seoul</option>
+                        <option value=1>Busan</option>
+                        <option value=2>Daegu</option>
+                        <option value=3>Incheon</option>
+                        <option value=4>Gwangju</option>
+                        <option value=5>Daejeon</option>
+                        <option value=6>Ulsan</option>
+                        <option value=7>Sejong</option>
+                        <option value=8>Gyeonggi-do</option>
+                        <option value=9>Gangwon-do</option>
+                        <option value=10>Chungcheongbuk-do</option>
+                        <option value=11>Chungcheongnam-do</option>
+                        <option value=12>Jeollabuk-do</option>
+                        <option value=13>Jeollanam-do</option>
+                        <option value=14>Gyeongsangbuk-do</option>
+                        <option value=15>Gyeongsangnam-do</option>
+                        <option value=16>Jeju-do</option>
+                    </select>
+                    
+                </div>
+                <div class="col-md-4">
+                    <select id="var-select" class="form-control">
+                        <option selected value="confirmed">confirmed</option>
+                        <option value="confirmed">confirmed</option>
+                        <option value="deceased">deceased</option>
+                        <option value="released">released</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div id="chart-area"></div>  
+            </div>
+        </div>
+
+    <!-- External JS libraries -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/d3.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
